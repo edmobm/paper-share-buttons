@@ -16,13 +16,51 @@
     html, body {
       font-family: "RobotoDraft", sans-serif;
       font-size: 16px;
-      margin: 40px;
       height: 100%;
+      color: rgba(0,0,0,.86);
+    }
+
+    section {
+      width: 80%;
+      margin: 50px auto 0;
+      text-align: center
+    }
+
+    @media screen and (min-width: 992px) {
+      section {
+        width: 970px;
+      }
     }
   </style>
 
-  <paper-share-facebook></paper-share-facebook>
-  <paper-share-twitter></paper-share-twitter>
-  <paper-share-google></paper-share-google>
+  <section>
+    <h1>Facebook</h1>
+
+    <paper-share-facebook href="http://www.nasa.gov/ames/kepler/nasas-kepler-discovers-first-earth-size-planet-in-the-habitable-zone-of-another-star"></paper-share-facebook>
+    <paper-share-facebook raised href="http://www.nasa.gov/ames/kepler/nasas-kepler-discovers-first-earth-size-planet-in-the-habitable-zone-of-another-star"></paper-share-facebook>
+  </section>
+
+  <section>
+    <h1>Twitter</h1>
+
+    <paper-share-twitter
+      user="nasa"
+      text="NASA's Kepler Discovers First Earth-Size Planet In The 'Habitable Zone' of Another Star"
+      href="http://www.nasa.gov/ames/kepler/nasas-kepler-discovers-first-earth-size-planet-in-the-habitable-zone-of-another-star"></paper-share-twitter>
+
+    <paper-share-twitter
+      username="nasa"
+      text="NASA's Kepler Discovers First Earth-Size Planet In The 'Habitable Zone' of Another Star"
+      href="http://www.nasa.gov/ames/kepler/nasas-kepler-discovers-first-earth-size-planet-in-the-habitable-zone-of-another-star"
+      raised></paper-share-twitter>
+  </section>
+
+  <section>
+    <h1>Google Plus</h1>
+
+    <paper-share-google href="http://www.nasa.gov/ames/kepler/nasas-kepler-discovers-first-earth-size-planet-in-the-habitable-zone-of-another-star"></paper-share-google>
+
+    <paper-share-google href="http://www.nasa.gov/ames/kepler/nasas-kepler-discovers-first-earth-size-planet-in-the-habitable-zone-of-another-star" raised></paper-share-google>
+  </section>
 </body>
 </html>
