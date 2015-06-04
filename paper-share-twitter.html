@@ -45,14 +45,14 @@
         value: ''
       },
 
-      username: {
+      user: {
         type: String,
         value: ''
       },
 
       url: {
         type: String,
-        computed: 'computeUrl(link, text, username)'
+        computed: 'computeUrl(link, text, user)'
       },
 
       raised: {
@@ -65,8 +65,8 @@
     /**
      * Concat the share url
      */
-    computeUrl: function(link, text, username) {
-      return 'https://twitter.com/intent/tweet?url=' + link + '&amp;text=' + text + '&amp;via=' + username;
+    computeUrl: function(link, text, user) {
+      return 'https://twitter.com/intent/tweet?url=' + link + '&amp;text=' + text + '&amp;via=' + user;
     },
 
     /**
