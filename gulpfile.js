@@ -28,7 +28,7 @@ gulp.task('server', function() {
   browser({
     server: {
       baseDir: './'
-    }
+        }
   });
 });
 
