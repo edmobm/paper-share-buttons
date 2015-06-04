@@ -1,6 +1,6 @@
 {
   "name": "paper-share-buttons",
-  "version": "0.1.0",
+  "version": "0.5.1",
   "homepage": "https://github.com/grvcoelho/social-share",
   "authors": [
     "Guilherme Rv Coelho <guilhermervcoelho@gmail.com>"
@@ -12,7 +12,8 @@
     "social",
     "paper",
     "share",
-    "share-button"
+    "share-button",
+    "web-components"
   ],
   "license": "MIT",
   "ignore": [
