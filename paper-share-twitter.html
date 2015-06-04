@@ -35,7 +35,7 @@
      * Element properties
      */
     properties: {
-      link: {
+      href: {
         type: String,
         value: window.location.href
       },
@@ -52,21 +52,25 @@
 
       url: {
         type: String,
-        computed: 'computeUrl(link, text, username)'
+        computed: 'computeUrl(href, text, username)'
       },
 
       raised: {
         type: Boolean,
-        notify: true,
         reflectToAttribute: true
       },
+
+      noink: {
+        type: Boolean,
+        reflectToAttribute: true
+      }
     },
 
     /**
      * Concat the share url
      */
-    computeUrl: function(link, text, username) {
-      return 'https://twitter.com/intent/tweet?url=' + link + '&amp;text=' + text + '&amp;via=' + username;
+    computeUrl: function(href, text, username) {
+      return 'https://twitter.com/intent/tweet?url=' + href + '&amp;text=' + text + '&amp;via=' + username;
     },
 
     /**

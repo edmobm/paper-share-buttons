@@ -35,28 +35,32 @@
      * Element properties
      */
     properties: {
-      link: {
+      href: {
         type: String,
         value: window.location.href
       },
 
       url: {
         type: String,
-        computed: 'computeUrl(link)'
+        computed: 'computeUrl(href)'
       },
 
       raised: {
         type: Boolean,
-        notify: true,
         reflectToAttribute: true
-      }
+      },
+
+      noink: {
+        type: Boolean,
+        reflectToAttribute: true
+      },
     },
 
     /**
      * Concat the share url
      */
-    computeUrl: function(link) {
-      return 'https://plus.google.com/share?url=' + link;
+    computeUrl: function(href) {
+      return 'https://plus.google.com/share?url=' + href;
     },
 
     /**
