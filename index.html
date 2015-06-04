@@ -16,13 +16,53 @@
     html, body {
       font-family: "RobotoDraft", sans-serif;
       font-size: 16px;
-      margin: 40px;
       height: 100%;
+      color: rgba(0,0,0,.86);
+    }
+
+    section {
+      width: 80%;
+      margin: 50px auto 0;
+      text-align: center
+    }
+
+    @media screen and (min-width: 992px) {
+      section {
+        width: 970px;
+      }
     }
   </style>
 
-  <paper-share-facebook raised></paper-share-facebook>
-  <paper-share-twitter raised></paper-share-twitter>
-  <paper-share-google raised></paper-share-google>
+  <section>
+    <h1>Facebook</h1>
+
+    <paper-share-facebook href="http://www.nasa.gov/ames/kepler/nasas-kepler-discovers-first-earth-size-planet-in-the-habitable-zone-of-another-star"></paper-share-facebook>
+    <paper-share-facebook raised href="http://www.nasa.gov/ames/kepler/nasas-kepler-discovers-first-earth-size-planet-in-the-habitable-zone-of-another-star"></paper-share-facebook>
+  </section>
+
+  <section>
+    <h1>Twitter</h1>
+
+    <paper-share-twitter
+      user="nasa"
+      text="NASA's Kepler Discovers First Earth-Size Planet In The 'Habitable Zone' of Another Star"
+      href="http://www.nasa.gov/ames/kepler/nasas-kepler-discovers-first-earth-size-planet-in-the-habitable-zone-of-another-star"></paper-share-twitter>
+
+    <paper-share-twitter
+      username="nasa"
+      text="NASA's Kepler Discovers First Earth-Size Planet In The 'Habitable Zone' of Another Star"
+      href="http://www.nasa.gov/ames/kepler/nasas-kepler-discovers-first-earth-size-planet-in-the-habitable-zone-of-another-star"
+      raised></paper-share-twitter>
+  </section>
+
+  <section>
+    <h1>Google Plus</h1>
+
+    <paper-share-google href="http://www.nasa.gov/ames/kepler/nasas-kepler-discovers-first-earth-size-planet-in-the-habitable-zone-of-another-star"></paper-share-google>
+
+    <paper-share-google href="http://www.nasa.gov/ames/kepler/nasas-kepler-discovers-first-earth-size-planet-in-the-habitable-zone-of-another-star" raised></paper-share-google>
+  </section>
+
+  <a href="https://github.com/grvcoelho/paper-share-buttons"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
 </body>
 </html>
