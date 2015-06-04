@@ -24,10 +24,12 @@ Or [download as ZIP](https://github.com/grvcoelho/paper-share-buttons/archive/ma
     <script src="bower_components/webcomponentsjs/webcomponents.js"></script>
     ```
 
-2. Import Custom Element:
+2. Import Custom Elements:
 
     ```html
-    <link rel="import" href="bower_components/twitter-button/dist/twitter-button.html">
+    <link rel="import" href="bower_components/paper-share-buttons/paper-share-facebook.html">
+    <link rel="import" href="bower_components/paper-share-buttons/paper-share-twitter.html">
+    <link rel="import" href="bower_components/paper-share-buttons/paper-share-google.html">
     ```
 
 3. Start using it!
@@ -62,7 +64,7 @@ Attribute | Options                                 | Description
 
 Attribute | Options                                 | Description
 ---       | ---                                     | ---
-`href`    | *string*                                | The URL displayed on the tweet
+`href`    | *string*                                | The URL displayed on the post
 `raised`  | *boolean*                               | Apply `raised` property to `paper-button`
 `noink`   | *boolean*                               | Apply `noink` property to `paper-button`
 
