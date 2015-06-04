@@ -14,7 +14,11 @@
   </style>
 
   <template>
-    <paper-button id="button" on-click="navigate" raised$={{raised}} noink$={{noink}}>
+    <paper-button
+      id="button"
+      on-click="navigate"
+      raised$={{raised}}
+      noink$={{noink}}>
       Twitter
     </paper-button>
   </template>
@@ -69,7 +73,6 @@
      * Navigate to the social authorization
      */
     navigate: function() {
-      console.log(this.url);
       window.open(this.url, 'twitter-share', 'width=580,height=296');
       return false;
     }
