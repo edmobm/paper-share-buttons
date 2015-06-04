@@ -1,14 +1,14 @@
 <link rel="import" href="components/polymer/polymer.html">
 <link rel="import" href="components/paper-button/paper-button.html">
 
-<dom-module id="paper-share-facebook">
+<dom-module id="paper-share-google">
   <style>
     #button {
-      color: #4B65BE;
+      color: #DC4335;
     }
 
     #button[raised] {
-      background: #4B65BE;
+      background: #DC4335;
       color: white;
     }
   </style>
@@ -19,7 +19,7 @@
       on-click="navigate"
       raised$={{raised}}
       noink$={{noink}}>
-      Facebook
+      Google
     </paper-button>
   </template>
 </dom-module>
@@ -29,7 +29,7 @@
     /**
      * Element Prototype
      */
-    is: 'paper-share-facebook',
+    is: 'paper-share-google',
 
     /**
      * Element properties
@@ -56,14 +56,14 @@
      * Concat the share url
      */
     computeUrl: function(link) {
-      return 'https://www.facebook.com/sharer/sharer.php?u=' + link;
+      return 'https://plus.google.com/share?url=' + link;
     },
 
     /**
      * Navigate to the social authorization
      */
     navigate: function() {
-      window.open(this.url, 'facebook-share', 'width=580,height=296');
+      window.open(this.url, 'google-share', 'width=490,height=530');
       return false;
     }
   });
